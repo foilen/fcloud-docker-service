@@ -1,6 +1,7 @@
 FROM ubuntu:15.10
 
 RUN export TERM=dumb ; export DEBIAN_FRONTEND=noninteractive ; apt-get update && apt-get install -y \
+  apt-transport-https \
   curl \
   git=1:2.5.0-1ubuntu0.2 \
   openjdk-8-jdk=8u91-b14-3ubuntu1~15.10.1 \
